@@ -34,10 +34,33 @@
 
 ---
 
-## History
+## Curriculum
+
+> 1주차  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 완전 탐색(BruteForce)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 정렬 (Sorting)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 문자열 (String)  
+---
+> 2주차  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 리스트 (List)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 스택 (Stack)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 큐 (Queue)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) 해시 (Hash)
+---
+>3주차  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 힙 (Heap)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 깊이/너비 우선 탐색 (DFS/BFS)  
+---
+>4주차  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 책 순서 진행  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;책 : 알고리즘 문제해결전략 ( [link](https://book.naver.com/bookdb/book_detail.nhn?bid=7058764) )
+---
+
+## Version History
 
 * 0.0.1
-    * Initial: Upload init Plan of Study
+    * Initial: Upload init Plan of Study : 2019.11.03
+    
 <!--
 * 0.2.0
     * CHANGE: Remove `setDefaultXYZ()`
