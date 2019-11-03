@@ -91,7 +91,7 @@ h_hojin@naver.com
 minho9301@naver.com
 
 고명진 - [@cokemania2](https://github.com/cokemania2) – 
-이메일
+coke_mania@naver.com
 
 고준형- [@Taker829](https://github.com/Taker829) – 
 kkt829@gmail.com
