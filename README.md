@@ -1,13 +1,12 @@
 # 알고리즘 스터디
 
 경기대학교 네트워크 연구실 알고리즘 스터디
-
+<!--
 ![](header.png) 
-연구실 로고?
-
+-->
 ---
 
-## 상세 계획
+## Planning
 
 목표 : Master of 3 level programmers
 
@@ -23,7 +22,7 @@
     
 ---
 
-## 진행 방식
+## Progress
 
 1. 발표  
     주차별 주제에 맞게 각자 준비
@@ -53,7 +52,7 @@
 -->
 
 ---
-## Contributing
+## Contribute
 
 채지훈 – [@blesk011](https://github.com/blesk011) – 
 blesk0111@gmail.com
