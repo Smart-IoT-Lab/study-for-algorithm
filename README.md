@@ -10,6 +10,8 @@
 
 목표 : Master of 3 level programmers
 
+모임 일시 : 매주 일요일 1시
+
 규칙:
 &nbsp;&nbsp;&nbsp;&nbsp;1. 지각 / 불참  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000원  
@@ -31,7 +33,8 @@
     공유 파일 Excel, Notion 에 정리  
     문제 2개 : 다음주 풀어올 문제를 다같이 선정
     문제 1개 : 발표자가 준비 및 발표
-
+3. 발표 자료 업로드  
+    Deadline : 일요일 오전 9시
 ---
 
 ## Curriculum
