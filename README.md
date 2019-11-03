@@ -12,7 +12,7 @@
 
 모임 일시 : 매주 일요일 1시
 
-규칙:
+규칙:  
 &nbsp;&nbsp;&nbsp;&nbsp;1. 지각 / 불참  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000원  
 &nbsp;&nbsp;&nbsp;&nbsp;2. 발표 준비 불성실  
@@ -84,15 +84,20 @@
 채지훈 – [@blesk011](https://github.com/blesk011) – 
 blesk0111@gmail.com
 
-허호진
+허호진 - [@cowmoomoo](https://github.com/cowmoomoo) – 
+h_hojin@naver.com
 
-장민호
+장민호 - [@minho-jang](https://github.com/minho-jang) – 
+minho9301@naver.com
 
-고명진
+고명진 - [@cokemania2](https://github.com/cokemania2) – 
+이메일
 
-고준형
+고준형- [@Taker829](https://github.com/Taker829) – 
+이메일
 
-고형용
+고형용- [@cokemania2](https://github.com/cokemania2) – 
+이메일
 
 <!--
 [https://github.com/yourname/github-link](https://github.com/dbader/)
