@@ -94,10 +94,10 @@ minho9301@naver.com
 이메일
 
 고준형- [@Taker829](https://github.com/Taker829) – 
-이메일
+kkt829@gmail.com
 
-고형용- [@cokemania2](https://github.com/cokemania2) – 
-이메일
+고형용- [@HyoungYong](https://github.com/HyoungYong) – 
+kgu15460@gmail.com
 
 <!--
 [https://github.com/yourname/github-link](https://github.com/dbader/)
