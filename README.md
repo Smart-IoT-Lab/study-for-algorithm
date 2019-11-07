@@ -10,7 +10,7 @@
 
 목표 : Master of 3 level programmers
 
-모임 일시 : 매주 일요일 1시
+모임 일시 : 매주 일요일 오후 1시
 
 규칙:  
 &nbsp;&nbsp;&nbsp;&nbsp;1. 지각 / 불참  
