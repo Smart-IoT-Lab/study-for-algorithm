@@ -36,7 +36,7 @@ Brute Force라고도 불리는 방법으로, 무식하게 가능한 모든 방�
 시간복잡도는 O(nlogn)이다.
 
 #### 왜 Quick Sort를 사용하는가?</br>
-> Merge Sort는 알고리즘을 수행하는데 새로운 리스트를 생성하는 시간때문에 Quick Sort보다 느리다.</br>
+Merge Sort는 알고리즘을 수행하는데 새로운 리스트를 생성하는 시간때문에 Quick Sort보다 느리다.</br>
 ###### 참고: https://penpen.tistory.com/entry/Algorithm-Quick-Sort-Merge-Sort-%EB%B9%84%EA%B5%90%EC%B2%B4%ED%97%98)
 
 #### 정렬 알고리즘 시간복잡도
