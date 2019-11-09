@@ -37,7 +37,7 @@ Brute Force라고도 불리는 방법으로, 무식하게 가능한 모든 방�
 
 #### 왜 Quick Sort를 사용하는가?</br>
 > Merge Sort는 알고리즘을 수행하는데 새로운 리스트를 생성하는 시간때문에 Quick Sort보다 느리다.</br>
-> (참고: https://penpen.tistory.com/entry/Algorithm-Quick-Sort-Merge-Sort-%EB%B9%84%EA%B5%90%EC%B2%B4%ED%97%98)
+###### 참고: https://penpen.tistory.com/entry/Algorithm-Quick-Sort-Merge-Sort-%EB%B9%84%EA%B5%90%EC%B2%B4%ED%97%98)
 
 #### 정렬 알고리즘 시간복잡도
 |  <center>알고리즘</center> |  <center>최선</center> |  <center>평균</center> |  <center>최악</center> |
@@ -75,13 +75,13 @@ Brute Force라고도 불리는 방법으로, 무식하게 가능한 모든 방�
 `StringBuilder`는 동기화를 지원하지 않기 때문에 멀티쓰레드 환경에서 적합하지 않다.
 대신, `StringBuilder`는 동기화를 고려하지 않기 때문에 싱글쓰레드 환경에서 `StringBuffer`에 비해 연산처리가 빠르다.
 
-참고: https://jeong-pro.tistory.com/85
+###### 참고: https://jeong-pro.tistory.com/85
 
 - `Scanner`
 - `BufferedReader`
 
 `Scanner`는 자바에서 입력을 처리하기 위해 흔히 사용되는 클래스이다.
-하지만 입력을 많이 받아야 하는 경우 속도가 느리기 때문에 BufferedReader를 사용해야 한다.
+하지만 입력을 많이 받아야 하는 경우 속도가 느리기 때문에 `BufferedReader`를 사용해야 한다.
 
 100만개의 정수를 입력받는데 `Scanner`는 2441ms, `BufferedReader`는 452ms가 소요된다.</br>
-(참고: https://m.blog.naver.com/PostView.nhn?blogId=occidere&logNo=220811824303&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+###### 참고: https://m.blog.naver.com/PostView.nhn?blogId=occidere&logNo=220811824303&proxyReferer=https%3A%2F%2Fwww.google.com%2F
