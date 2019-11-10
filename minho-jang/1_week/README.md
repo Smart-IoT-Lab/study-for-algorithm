@@ -85,3 +85,10 @@ Merge Sort는 알고리즘을 수행하는데 새로운 리스트를 생성하�
 
 100만개의 정수를 입력받는데 `Scanner`는 2441ms, `BufferedReader`는 452ms가 소요된다.</br>
 ###### 참고: https://m.blog.naver.com/PostView.nhn?blogId=occidere&logNo=220811824303&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+
+----
+
+### 같이 풀어볼 문제
+카카오 신입 공채 1차 코딩 테스트 2번 다트게임 (문자열)</br>
+https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/
+
