@@ -1,4 +1,4 @@
-package algorithm.study;
+package algorithmStudy.week1;
 
 public class BaseBallAgent {
 	public int solution(int[][] question) {
