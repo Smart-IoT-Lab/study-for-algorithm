@@ -1,4 +1,4 @@
-package algorithm.study;
+package algorithmStudy.week1;
 
 public class AlgorithmStudy {
 
@@ -14,9 +14,6 @@ public class AlgorithmStudy {
 		// System.out.println(question[0].length);
 		
 		baseBallAgent.solution(question);
-
-		SwimmingPool swimmingAgent = new SwimmingPool();
-		swimmingAgent.solution();
 		
 		PhoneBook phoneBookAgent = new PhoneBook();
 		String [] phoneBook1 = {"119", "97674223", "1195524421"};

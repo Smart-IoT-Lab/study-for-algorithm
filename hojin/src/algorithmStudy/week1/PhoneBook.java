@@ -1,4 +1,4 @@
-package algorithm.study;
+package algorithmStudy.week1;
 
 import java.util.Arrays;
 
