@@ -28,11 +28,11 @@
 
 1. 발표  
     주차별 주제에 맞게 각자 준비
-    스터디 당일 랜덤 발표
+    스터디 당일 랜덤 발표 (스터디 내용, 선정문제 2개 풀이)
 2. 문제 풀이  
-    공유 파일 Excel, Notion 에 정리  
-    문제 2개 : 다음주 풀어올 문제를 다같이 선정
-    문제 1개 : 발표자가 준비 및 발표
+    공유 파일 Excel 에 정리  
+    문제 2개 : 다음주 풀어올 문제를 다같이 선정  
+    문제 1개 : 발표자가 준비 및 발표 (발표날 다같이 진행)
 3. 발표 자료 업로드  
     Deadline : 일요일 오전 9시  
     구글Docs : https://docs.google.com/spreadsheets/d/1c7XnY03q4siuhds3iw3Fi2tOraB47CKhc9ptvmfx9hU/edit?usp=sharing
