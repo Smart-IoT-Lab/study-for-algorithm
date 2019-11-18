@@ -34,7 +34,8 @@
     문제 2개 : 다음주 풀어올 문제를 다같이 선정
     문제 1개 : 발표자가 준비 및 발표
 3. 발표 자료 업로드  
-    Deadline : 일요일 오전 9시
+    Deadline : 일요일 오전 9시  
+    구글Docs : https://docs.google.com/spreadsheets/d/1c7XnY03q4siuhds3iw3Fi2tOraB47CKhc9ptvmfx9hU/edit?usp=sharing
 4. 스킬 테스트  
     매 월 마지막주 일요일 Programmers 사이트 스킬 테스트 진행
 ---
