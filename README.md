@@ -54,7 +54,7 @@
 
 * 3주차  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 힙 (Heap)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 깊이/너비 우선 탐색 (DFS/BFS)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 깊이/너비 우선 탐색 (DFS/BFS)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 발표날 프로그래머스 레벨1 테스트 진행(40분 소요)
 
 * 4주차  
