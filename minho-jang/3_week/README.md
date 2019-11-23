@@ -6,7 +6,7 @@
 
 따라서 노드에 차례대로 번호를 붙힐 수 있다. 이 번호를 배열의 인덱스로 생각하면 배열에 힙의 노드들을 저자할 수 있다.
 
-![heap_example](./images/heap.PNG)
+![heap_example](./images/heap.png)
 
 어떤 노드의 왼쪽이나 오른쪽 자식의 인덱스를 알고싶으면 위와 같은 식을 이용한다.
 
@@ -24,7 +24,7 @@ DFS는 vertax의 자식들을, BFS는 vertax의 형제들을 우선 탐색한다
 
 
 #### DFS (깊이 우선 탐색)
-![dfs_example](./images/dfs-example.PNG)
+![dfs_example](./images/dfs-example.png)
 
 DFS는 어떤 정점에서 우선순위에 따라 연결된 다른 정점으로 이동할 수 있을 때까지 이동하면서 진행된다. 더이상 진행할 수 없다면 이전 정점으로 백트랙(backtracking)하여 다른 정점으로 진행하고, 모든 정점을 탐색할 때까지 반복적으로 검사하는 전체 탐색 방법이다.
 
@@ -36,7 +36,7 @@ DFS는 어떤 정점에서 우선순위에 따라 연결된 다른 정점으로 
 - 인접 행렬로 표현된 그래프: O(V^2)
 
 #### BFS (너비 우선 탐색)
-![bfs_example](./images/bfs-example.PNG)
+![bfs_example](./images/bfs-example.png)
 
 BFS는 정점으로부터 가까운 정점을 먼저 방문하고 멀리 떨어진 정점을 나중에 방문하는 순회 방법이다. 두 노드 사이의 최단 경로 또는 임의의 경로를 찾고 싶을 때 이 방법을 이용한다.
 
