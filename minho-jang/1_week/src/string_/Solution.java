@@ -12,25 +12,25 @@ class Solution {
 			char c = dartResult.charAt(idx);
 			
 			// 1S2D3T
-			if (c == 숫자) {
-				boolean inLoop = true;
-				Score s = new Score();
-				s.num.concat(String.valueOf(c));
-
-				while(inLoop) {
-					if (c == 숫자)
-						s.num.concat(String.valueOf(c));
-
-					if (c == 몇배)
-						s.times = c;
-					
-					if (c == 옵션)
-						s.option = c;
-				}
-				
-				score.add(s);
-				idx++;
-			}
+//			if (c == 숫자) {
+//				boolean inLoop = true;
+//				Score s = new Score();
+//				s.num.concat(String.valueOf(c));
+//
+//				while(inLoop) {
+//					if (c == 숫자)
+//						s.num.concat(String.valueOf(c));
+//
+//					if (c == 몇배)
+//						s.times = c;
+//					
+//					if (c == 옵션)
+//						s.option = c;
+//				}
+//				
+//				score.add(s);
+//				idx++;
+//			}
 			
 			
 			
