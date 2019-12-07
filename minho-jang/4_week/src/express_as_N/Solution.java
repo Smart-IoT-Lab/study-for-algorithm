@@ -1,4 +1,4 @@
-package dynamic_programming;
+package express_as_N;
 
 import java.util.*;
 

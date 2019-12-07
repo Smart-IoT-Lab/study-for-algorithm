@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Solution {
 
+	// HashMap<ArrayList<Integer>, Integer> map = new HashMap<>();
+	
     public int solution(int[] money) {
         int answer = 0;
         
@@ -11,104 +13,99 @@ public class Solution {
         for (int i : money)
         	moneyToList.add(i);
         
-    	int stealMax = 0;
-        for (int i=0; i < moneyToList.size(); i++) {
-        	System.out.println("TEST CASE " + i + " =========================");
-        	boolean[] canSteal = new boolean[moneyToList.size()];
-            Arrays.fill(canSteal, true);
-            
-        	int steal = 0;
-            // 어떤 집 선택
-        	if (canSteal[i])
-        		steal += moneyToList.get(i);
-        	else
-        		continue;
-        	// 양 옆에 경보
-        	alarm(canSteal, i);  
-        	
-        	// 나머지 집 중에서 훔쳤을 때 최대값
-        	steal += stealing(moneyToList, canSteal);
-        	System.out.println("TEST steal: " + steal);
-        	if (stealMax < steal)
-        		stealMax = steal;
-        }
-
-        return stealMax;
+    	answer = stealing(moneyToList, 0, 0);
+    	// System.out.println("Memo size: " + map.size());
+        return answer;
     }
     
-    int stealing(ArrayList<Integer> moneyToList, boolean[] canSteal) {
-    	int trueCount = 0;
-    	for (boolean b : canSteal) {
-    		System.out.println("TEST canSteal: " + b);
-    		if (b)
-    			trueCount++;
-    	}
+    //											접근불가능한 집 개수
+    int stealing(ArrayList<Integer> moneyToList, int stealCount, int idx) {
+    	for(int i : moneyToList)
+    		System.out.println("TEST temp[]: " + i);
     	
-    	// 털 수 있는 집이 없으면
-    	if (trueCount == 0)
-    		return 0;
+    	// 메모이제이션
+//    	if (map.containsKey(moneyToList)) {
+//    		System.out.println("Memo @@ " + map.get(moneyToList));
+//    		
+//    		return map.get(moneyToList);
+//    	}
     	
     	// 털 수 있는 집이 3개 미만
-    	if (trueCount < 3) {
+    	if (moneyToList.size()-stealCount < 3) {
+    		if (moneyToList.size() == stealCount)	return 0;
+    		
     		// 걍 최대값 리턴
-    		int max = 0;
-    		int idx = 0;
-    		for (int i : moneyToList) {
-    			if (canSteal[idx])
-    				if (max < i)
-    					max = i;
-    			else
-    				continue;
-    			idx++;
-    		}
-    		System.out.println("TEST Max: " + max);
+        	int max = Collections.max(moneyToList);
+        	//map.put(moneyToList, max);
     		return max;
     	}
     	
     	int stealMax = 0;
-    	boolean[] tmp;
-    	for (int i=0; i < moneyToList.size(); i++) {
+    	for (int i=idx; i < moneyToList.size(); i++) {
+    		ArrayList<Integer> temp = (ArrayList<Integer>) moneyToList.clone();
     		int steal = 0;
-    		tmp = Arrays.copyOf(canSteal, canSteal.length);
     		
             // 어떤 집 선택
-        	if (tmp[i])
-        		steal += moneyToList.get(i);
+        	if (temp.get(i) > 0)
+        		steal += temp.get(i);
         	else
         		continue;
-        	// 양 옆에 경보
+
         	System.out.println("TEST selcet i: " + i);
-        	alarm(tmp, i);
+        	// 양 옆에 경보
+        	int cnt = alarm(temp, i);
         	
-        	steal += stealing(moneyToList, tmp);
+        	steal += stealing(temp, stealCount+cnt, i);
+    		System.out.println("=======================result: " + steal + "====");
         	if (stealMax < steal)
         		stealMax = steal;
         }
     	
+    	// 메모이제이션
+    	// map.put(moneyToList, stealMax);
+    	
     	return stealMax;
 	}
 
-	void alarm(boolean[] b, int idx) {
-    	// 본인
-    	b[idx] = false;
+	int alarm(ArrayList<Integer> a, int idx) {
+		int cnt=0;
+		
+		int leftIdx = 0;
+		int rightIdx = 0;
+    	// 털린 본인
+    	a.set(idx, -1);
+    	cnt++;
     	
+    	// 경보울린데 -1
     	// 왼쪽
     	if (idx == 0)
-    		b[b.length-1] = false;
+    		leftIdx = a.size()-1;
     	else
-    		b[idx-1] = false;
+    		leftIdx = idx-1;
     	
     	// 오른쪽
-    	if (idx == b.length-1)
-    		b[0] = false;
+    	if (idx == a.size()-1)
+    		rightIdx = 0;
     	else
-    		b[idx+1] = false;
+    		rightIdx = idx+1;
+    	
+    	if (a.get(leftIdx) <= 0)
+    		cnt++;
+    	else 
+    		a.set(leftIdx, -1);
+    	
+    	if (a.get(rightIdx) <= 0)
+    		cnt++;
+    	else 
+    		a.set(rightIdx, -1);
+    	
+    	return cnt;
     }
 	
 	public static void main(String args[]) {
 		Solution s = new Solution();
 		
-		int[] money = {1,100,1,1,101,1};
+		int[] money = {1,101,1,1,102,1};
 		System.out.println(s.solution(money));
 	}
 }
