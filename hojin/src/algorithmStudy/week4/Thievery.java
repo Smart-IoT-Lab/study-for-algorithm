@@ -3,6 +3,32 @@ package algorithmStudy.week4;
 import java.util.HashMap;
 
 public class Thievery {
+	// 재귀 풀이
+	static int totalMoney = 0;
+	public int solution0(int[] money) {
+		int answer = 0;
+		answer = thievery(money, totalMoney);
+		return answer;	
+	}
+	public int thievery(int[] remainHouse, int totalMoney) {
+		if(remainHouse.length == 0) { 
+			return 0;
+		} else if(remainHouse.length == 1) {
+			return remainHouse[0];
+		} else if(remainHouse.length == 2) {
+			return Math.max(remainHouse[0], remainHouse[1]);
+		} 
+		
+		int[] temp = Arrays.copyOf(remainHouse, remainHouse.length);
+		int sum1, sum2;
+
+		remainHouse = Arrays.copyOfRange(temp, 2, (temp.length - 1));
+		sum1 = totalMoney + temp[0] + thievery(remainHouse, totalMoney);
+
+		remainHouse = Arrays.copyOfRange(temp, 3, (temp.length));
+		sum2 = totalMoney + temp[1] + thievery(remainHouse, totalMoney);
+		return Math.max(sum1, sum2);	
+	}
 	
 	//인터넷 풀이
 	public int solution1(int[] money) {
@@ -34,6 +60,8 @@ public class Thievery {
 		mem1.put(1,  )
 		return answer;
 	}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Thievery thieveryAgent = new Thievery();
