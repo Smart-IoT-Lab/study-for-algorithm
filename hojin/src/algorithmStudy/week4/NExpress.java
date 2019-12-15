@@ -26,15 +26,16 @@ public class NExpress {
 		if(useN == 1) {
 			// index 0 처리
 			useNPossibleNumber.add(new HashSet<Integer>(0));
+			// index 1 처리
 			useNCalcResult.add(0 + N);
 			useNCalcResult.add(0 - N);
 		} else {
 			int temp = 0;
+			// n개 나열해서 나타낼수 있는 숫자 : ex 2개 나열 55
 			for(int i = 0; i < useN; i++) {
 				temp = temp*10 + N;
 				System.out.println("useN :" + useN+ " temp :" + temp);
 			}
-			// n개 나열해서 나타낼수 있는 숫자 : ex 2개 나열 55
 			useNCalcResult.add(temp);
 			
 			// N을 한개 덜 쓴 경우와 사칙연산 해줌
