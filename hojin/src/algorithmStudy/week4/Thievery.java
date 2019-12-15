@@ -40,6 +40,7 @@ public class Thievery {
         
         dp[0]=money[0];
         dp[1]=money[0];
+        
         dp2[0]=0;
         dp2[1]=money[1];
         for(int i=2;i<length-1;i++){
@@ -70,7 +71,7 @@ public class Thievery {
             int value = Math.max(temp1+money[i],);
 			mem1.put(i, value);
         }
-		for(int i=3;i<length;i++){
+		for(int i=2;i<length;i++){
             int value = Math.max(mem2.get(i-2)+money[i],mem2.get(i-1));
 			mem2.put(i, value);
         }

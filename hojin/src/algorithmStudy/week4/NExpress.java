@@ -48,7 +48,11 @@ public class NExpress {
 				
 				useNCalcResult.add(num + N);
 				useNCalcResult.add(num - N);
+				useNCalcResult.add(N - num);
 				useNCalcResult.add(num * N);
+				if(num != 0) {
+					useNCalcResult.add(N/num);
+				}
 				useNCalcResult.add(num / N);
 			}
 		}
