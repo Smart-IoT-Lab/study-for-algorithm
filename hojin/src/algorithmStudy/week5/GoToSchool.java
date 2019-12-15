@@ -11,16 +11,7 @@ public class GoToSchool {
 		for(int[] arr :path) {
 			Arrays.fill(arr, -1);
 		}
-		
-		// 최단경로 1개인 경우 초기화
-		// 오른쪽으로 1번~(m-1)번 움직이는 경로는 1개
-		for(int i = 0; i < m; i++) {
-			path[0][i] = 1;
-		}
-		// 아래로로 1번~(n-1)번 움직이는 경로는 1개
-		for(int i = 0; i < n; i++) {
-			path[i][0] = 1;
-		}
+
 		// 장애물 처리
 		for(int[] i: puddles) {
 			System.out.println("장애물");
@@ -29,6 +20,25 @@ public class GoToSchool {
 			System.out.println("장애물 처리 후");
 			System.out.println("path["+i[0]+"]["+i[1]+"]"+path[i[0]-1][i[1]-1]);
 		}
+		
+		// 최단경로 1개인 경우 초기화
+		int initNum = 1;
+		// 오른쪽으로 1번~(m-1)번 움직이는 경로는 1개
+		for(int i = 0; i < m; i++) {
+			if(path[0][i] == 0) {
+				initNum = 0;
+			}
+			path[0][i] = initNum;
+		}
+		initNum = 1;
+		// 아래로로 1번~(n-1)번 움직이는 경로는 1개
+		for(int i = 0; i < n; i++) {
+			if(path[i][0] == 0) {
+				initNum = 0;
+			}
+			path[i][0] = 1;
+		}
+
 		// 메모라이징???
 		for(int i = 1; i < n; i++) {
 			for(int j = 1; j < m; j++) {			
@@ -36,7 +46,7 @@ public class GoToSchool {
 				System.out.println("path["+i+"]["+j+"]"+path[i][j]);
 				// 최단경로 정보 없으면 메모라이징
 				if(path[i][j] == -1) {
-					path[i][j] = path[i-1][j] + path[i][j-1];
+					path[i][j] = (path[i-1][j] + path[i][j-1])%QUOTIENT;
 					System.out.println("메모라이징 진행");
 					System.out.println("path["+i+"]["+j+"]"+path[i][j]);
 				}
