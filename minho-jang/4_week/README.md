@@ -12,3 +12,7 @@
 > 문제의 크기를 조금씩 늘린다. </br>
 > 작은 문제를 풀었기 때문에 큰 문제는 항상 풀 수있다. </br>
 > 크기를 늘리다보면 언젠간 풀어야하는 문제를 푼다.
+
+#### 문제
+- [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895) (미해결)
+- [도둑질](https://programmers.co.kr/learn/courses/30/lessons/42897) (미해결)
