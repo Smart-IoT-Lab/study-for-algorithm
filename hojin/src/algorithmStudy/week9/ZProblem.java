@@ -19,9 +19,8 @@ public class ZProblem {
 			int remainC = c % 2;
 			System.out.print(
 					4 * (row * (int)(r/2) + (int)(c/2)) + (remainR * 2 + remainC)
-					);	
+			);
 		}
-
 	}
 	public int solution(int N, int r, int c) {
 		if(N == 1) {
