@@ -1,6 +1,5 @@
 package algorithmStudy.week1;
 
-import java.util.Arrays;
 import java.lang.Math;
 
 public class DartGame {

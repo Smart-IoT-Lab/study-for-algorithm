@@ -6,11 +6,14 @@ public class CardGame {
         int numOfHalfCard = left.length;
         int [][] dp = new int[numOfHalfCard+1][numOfHalfCard+1];
         
+        // init [0]
+        
         for (int i = 0; i < numOfHalfCard; i++) {
         	for(int j = 0; j < numOfHalfCard; j++) {
         		// 오른쪽 카드가 작은 경우
         		// 오른쪽 카드 버림
         		if (left[i] > right[j]) {
+        			//dp[i][j] = Math.max(dp[i][j], dp[i][j-1] + right[j]);
         			dp[i][j+1] = Math.max(dp[i][j+1], dp[i][j] + right[j]);
         		}
         		// 오른쪽 카드가 크거나 같을 경우
@@ -22,10 +25,11 @@ public class CardGame {
         		}
         	}
         }
-        
         //둘중 하나 다버리면 끝남        
         for(int i = 0; i < numOfHalfCard+1; i++) {
+        	//오른쪽 카드를 다 쓴 경우
         	answer = Math.max(answer, dp[i][numOfHalfCard]);
+        	// 왼쪽 카드를 다 쓴 경우
         	answer = Math.max(dp[numOfHalfCard][i], answer);
         }
         

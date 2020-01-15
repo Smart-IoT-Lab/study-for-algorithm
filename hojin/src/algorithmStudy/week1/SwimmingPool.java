@@ -107,6 +107,6 @@ public class SwimmingPool {
 		{
 			System.out.println("#"+(i+1)+" "+results[i]);
 		}
-
+		sc.close();
 	}
 }

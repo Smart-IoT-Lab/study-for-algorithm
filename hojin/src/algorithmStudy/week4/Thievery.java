@@ -1,6 +1,6 @@
 package algorithmStudy.week4;
 
-import java.util.HashMap;
+// import java.util.HashMap;
 import java.util.Arrays;
 
 public class Thievery {
@@ -53,39 +53,39 @@ public class Thievery {
         System.out.println(answer);
         return answer;
     }
-	public int solution(int[] money) {
-		int answer = 1;
-		int length = money.length;
-		HashMap<Integer, Integer> mem1 = new HashMap<>();
-		HashMap<Integer, Integer> mem2 = new HashMap<>();
-		
-		mem1.put(0, money[0]);
-		mem1.put(1, money[0]);
-		mem2.put(0, 0);
-		mem2.put(1, money[1]);
-		
-		for(int i=2;i<length-1;i++){
-			int temp1 = mem1.get(i-2);
-			System.out.println(temp1);
-			int temp2 = mem1.get(i-1);
-            int value = Math.max(temp1+money[i],);
-			mem1.put(i, value);
-        }
-		for(int i=2;i<length;i++){
-            int value = Math.max(mem2.get(i-2)+money[i],mem2.get(i-1));
-			mem2.put(i, value);
-        }
-		answer = Math.max(mem1.get(length-2),mem2.get(length-1));
-        System.out.println(answer);
-		return answer;
-	}
+//	public int solution(int[] money) {
+//		int answer = 1;
+//		int length = money.length;
+//		HashMap<Integer, Integer> mem1 = new HashMap<>();
+//		HashMap<Integer, Integer> mem2 = new HashMap<>();
+//		
+//		mem1.put(0, money[0]);
+//		mem1.put(1, money[0]);
+//		mem2.put(0, 0);
+//		mem2.put(1, money[1]);
+//		
+//		for(int i=2;i<length-1;i++){
+//			int temp1 = mem1.get(i-2);
+//			System.out.println(temp1);
+//			int temp2 = mem1.get(i-1);
+//            int value = Math.max(temp1+money[i],);
+//			mem1.put(i, value);
+//        }
+//		for(int i=2;i<length;i++){
+//            int value = Math.max(mem2.get(i-2)+money[i],mem2.get(i-1));
+//			mem2.put(i, value);
+//        }
+//		answer = Math.max(mem1.get(length-2),mem2.get(length-1));
+//        System.out.println(answer);
+//		return answer;
+//	}
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Thievery thieveryAgent = new Thievery();
-		int [] money = {1, 2, 3, 1};
-		thieveryAgent.solution(money);
+//		Thievery thieveryAgent = new Thievery();
+//		int [] money = {1, 2, 3, 1};
+//		thieveryAgent.solution(money);
 	}
 
 }

@@ -28,6 +28,7 @@ public class HanoiTower {
 		
 		System.out.println(answer);
 		System.out.println(sb);
+		sc.close();
 	}
 
 }
