@@ -68,5 +68,6 @@ public class ZProblem {
 		ZProblem agent = new ZProblem();		
 		agent.solution(N, r, c);
 		System.out.print(answer);
+		sc.close();
 	}
 }
