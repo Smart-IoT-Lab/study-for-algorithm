@@ -1,4 +1,4 @@
-package week_10;
+package week_10.선연결하기;
 import java.util.*;
 
 public class Solution {
