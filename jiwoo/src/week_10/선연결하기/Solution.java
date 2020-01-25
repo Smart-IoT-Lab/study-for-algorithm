@@ -11,6 +11,7 @@ public class Solution {
             return cycle[node] = find(cycle[node]);
         }
     }
+    
     public int solution(int n,int[][] costs) {
         int answer = 0;
         cycle = new int[n]; //간선의 개수 <= 정점의 개수-1

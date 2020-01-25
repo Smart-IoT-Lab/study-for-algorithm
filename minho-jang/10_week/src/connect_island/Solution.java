@@ -3,48 +3,48 @@ package connect_island;
 import java.util.*;
 
 public class Solution {
-	// ÇÁ¸² ¾Ë°í¸®Áò
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ë°ï¿½ï¿½ï¿½
     public int solution(int n, int[][] costs) {
     	int sumCost = 0;
-    	
-    	// ¿¬°áµÈ ³ëµåµé
+    	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         ArrayList<Integer> connected = new ArrayList<>();
         
-        // ÀÏ´Ü 0¹ø ¼±ÅÃ.
+        // ï¿½Ï´ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
         connected.add(0);
         
-        // ¹Ýº¹ÇØ.
+        // ï¿½Ýºï¿½ï¿½ï¿½.
         while(true) {
-        	// Æ®¸®°¡ ¿Ï¼ºµÇ¾ú³ª?
+        	// Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¼ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½?
         	if(connected.size() == n)
         		break;
         
-        	int minCost = Integer.MAX_VALUE;	// ÃÖ¼Òºñ¿ë ¼±ÅÃ
-            int minIndex = Integer.MAX_VALUE;	// ¼±ÅÃµÈ ÀÎµ¦½º
-            int addNode = 0;					// Ãß°¡µÉ ³ëµå ¹øÈ£
+        	int minCost = Integer.MAX_VALUE;	// ï¿½Ö¼Òºï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            int minIndex = Integer.MAX_VALUE;	// ï¿½ï¿½ï¿½Ãµï¿½ ï¿½Îµï¿½ï¿½ï¿½
+            int addNode = 0;					// ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½È£
 
-            // 1. ¼±ÅÃµÈ ³ëµåµé°ú ¿¬°áµÈ ¼±µéÀ» È®ÀÎÇØ. 
-            // 2. cost°¡ °¡Àå ÀûÀº ¼±À» ¼±ÅÃÇØ.
-            // 3. ±× ¼±ÀÇ ³ëµå¸¦ Ãß°¡ÇØ.
+            // 1. ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½. 
+            // 2. costï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+            // 3. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½å¸¦ ï¿½ß°ï¿½ï¿½ï¿½.
         	for (int c : connected) {
-        		int start = c;	// ¿¬°áµÈ ³ëµåµé Áß ¾î¶² ³ëµå
+        		int start = c;	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½î¶² ï¿½ï¿½ï¿½
                 
-            	// start ³ëµå¿ÍÀÇ ¿¬°áÀ» Ã£¾Æ
+            	// start ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½
                 for (int i=0; i<costs.length; i++) {
-                	// start°¡ ½ÃÀÛÁ¡ÀÎ°¡
+                	// startï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½
+
                 	if (costs[i][0] == start) {
-                		// ±×°Ô ÃÖ¼Ò°ªÀÌ¾ß?
-                		if (costs[i][2] > 0 	// »ç¿ëµÈ ¿¬°áÀÎÁö ¾Æ´ÑÁö.
-                				&& !connected.contains(costs[i][1])		// ÀÌ¹Ì ¿¬°áµÈ ³ëµåÀÎÁö ¾Æ´ÑÁö
-                				&& minCost > costs[i][2]) {				// cost°¡ ÃÖ¼Ò°ªÀÎÁö
+                		// ï¿½×°ï¿½ ï¿½Ö¼Ò°ï¿½ï¿½Ì¾ï¿½?
+                		if (costs[i][2] > 0 	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ï¿½ï¿½.
+                				&& !connected.contains(costs[i][1])		// ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ï¿½ï¿½
+                				&& minCost > costs[i][2]) {				// costï¿½ï¿½ ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ï¿½ï¿½
                 			addNode = costs[i][1];
                 			minCost = costs[i][2];
                 			minIndex = i;
                 		}
                 	} 
-                	// start°¡ ³¡Á¡ÀÎ°¡
+                	// startï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½
                 	else if(costs[i][1] == start) {
-                		// ±×°Ô ÃÖ¼Ò°ªÀÌ¾ß?
+                		// ï¿½×°ï¿½ ï¿½Ö¼Ò°ï¿½ï¿½Ì¾ï¿½?
                 		if (costs[i][2] > 0 
                 				&& !connected.contains(costs[i][0])
                 				&& minCost > costs[i][2]) {
@@ -57,8 +57,8 @@ public class Solution {
         	}
         	
         	sumCost += minCost;
-            costs[minIndex][2] = -1;	// ¿¬°á ÀÌ¿ëÇßÀ½À» Ç¥½Ã
-            connected.add(addNode);		// ³ëµå Ãß°¡
+            costs[minIndex][2] = -1;	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½
+            connected.add(addNode);		// ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
         }
         
     	return sumCost;
