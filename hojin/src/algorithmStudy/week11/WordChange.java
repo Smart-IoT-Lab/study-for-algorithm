@@ -1,49 +1,92 @@
 package algorithmStudy.week11;
 
-import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
+class wordInfo{
+	String word;
+	int step;
+	wordInfo(String word, int step){
+		this.word = word;
+		this.step = step;
+	}
+}
+
 public class WordChange {
-	public int solution(String begin, String target, String[] words) {
-        List<String> wordList = Arrays.asList(words);
-        int answer = 0;
-        // 없으면 0
-        if (!wordList.contains(target)) {
-        	return answer;
-        }
-        int wordLength = begin.length();
-        Queue<String> q = new LinkedList<String>();
-	    q.add(begin);
-        for(String item : q) {
-        	for(String word : wordList) {
-	        	int difference = 0;
-	        	// char[] charList = new char[wordLength];
-	        	for(int idx = 0; idx < wordLength; idx ++) {
-	        		if(difference > 1)
-	        			break;
-	        		if(item.charAt(idx) != word.charAt(idx)) {
-	        			difference += 1;
-	        		}
-	        		if(idx == wordLength-1) {
-	        			if(difference == 0)
-	        				return answer;
-	        			if(difference == 1) {
-	        				q.add(word);
-	        				// exception 발생 가능
-	        				wordList.remove(word);
-	        			}		
-	        		}
-	        	}
-	        }
+	boolean isChangerable(String word, String target) {
+		int wordLength = word.length();
+		int difference = 0;
+		
+		if (word.equals(target)) {
+			return false;
 		}
+//		
+//		fail, check here
+		
+//		for(int idx = 0; idx < wordLength; idx ++) {
+//    		if(difference > 1) {
+//    			return false;
+//    		}
+//    		if(word.charAt(idx) != target.charAt(idx)) {
+//    			difference += 1;
+//    		}
+//    	}
+		
+		for(int idx = 0; idx < wordLength; idx ++) {
+			if(difference > 1) {
+				return false;
+			}
+			if(word.charAt(idx) != target.charAt(idx)) {
+				difference += 1;
+			}
+		}
+		if (difference == 1) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public int solution(String begin, String target, String[] words) {
+        
+        int answer = 0;
+        int numberOfWords = words.length;
+        
+        Queue<wordInfo> q = new LinkedList<>();
+	    q.add(new wordInfo(begin, 0));
+	    boolean[] visited = new boolean[numberOfWords];
+	    
+	    // int step = 0;
+	    
+	    while(!q.isEmpty()) {
+	    	wordInfo currentWordInfo = q.poll();
+	    	if(currentWordInfo.word.equals(target)) {
+	    		answer = currentWordInfo.step;
+	    		break;
+	    	}
+	    	
+	    	for (int i = 0; i < numberOfWords; i++) {
+	    		if(!visited[i] && isChangerable(currentWordInfo.word, words[i])) {
+	    			visited[i] = true;
+	    			q.add(new wordInfo(words[i], currentWordInfo.step + 1));
+	    		}
+	    	} 	
+	    }
+        System.out.println(answer);
         return answer;
-    }
+	}
+
 	// public void inQueue(Queue<T> q, )
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		String begin = "hit";
+		String target = "cog";
+		
+		String [] words = {"hot", "dot", "dog", "lot", "log", "cog"};
+		
+		WordChange agent = new WordChange();
+		agent.solution(begin, target, words);
+		
 	}
 
 }
