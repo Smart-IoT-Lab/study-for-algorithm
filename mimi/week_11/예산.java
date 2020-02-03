@@ -1,4 +1,4 @@
-//¿¹»ê
+//ì˜ˆì‚°
 import java.util.*;
 
 class Solution {
@@ -6,12 +6,12 @@ class Solution {
         int answer = 0;
         int sum=0, i=0;
         Arrays.parallelSort(budgets);
-        		//¿äÃ» ¿¹»ê ÇÕ°è
+        		//ìš”ì²­ ì˜ˆì‚° í•©ê³„
 		for(int j=0;j<budgets.length;j++) {
 			sum+=budgets[j];	
 		}
 		
-		if(M >= sum) {//¿¹»êÃÊ°ú ¾ÈÇßÀ» °æ¿ì
+		if(M >= sum) {//ì˜ˆì‚°ì´ˆê³¼ ì•ˆí–ˆì„ ê²½ìš°
 			answer=budgets[budgets.length-1];
             return answer;
 		}
@@ -22,7 +22,7 @@ class Solution {
         	return answer;
         }
         
-        int M2;//ÀÓ½Ãº¯¼ö
+        int M2;//ì„ì‹œë³€ìˆ˜
         	
 		for(i=0;i<budgets.length;i++) {
 			M-=budgets[i];
@@ -37,3 +37,5 @@ class Solution {
 
     }
 }
+
+//ì˜ë³´ê³ ê°‘
