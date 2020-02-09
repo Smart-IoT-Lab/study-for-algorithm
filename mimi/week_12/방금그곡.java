@@ -4,7 +4,7 @@ class Solution {
 	  String answer="(None)";
       int max=0;//최대 재생시간
       
-      		if(m.contains("C#")) {
+      			if(m.contains("C#")) {
 				m=m.replace("C#", "1");
 			}
 			if(m.contains("D#")) {
