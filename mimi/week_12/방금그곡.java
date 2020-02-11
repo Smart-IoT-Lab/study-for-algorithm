@@ -2,9 +2,9 @@ class Solution {
   public String solution(String m, String[] musicinfos) {
       String start_time, end_time, title,info;
 	  String answer="(None)";
-      int max=0;//ÃÖ´ë Àç»ý½Ã°£
+      int max=0;//ìµœëŒ€ ìž¬ìƒì‹œê°„
       
-      		if(m.contains("C#")) {
+      			if(m.contains("C#")) {
 				m=m.replace("C#", "1");
 			}
 			if(m.contains("D#")) {
@@ -30,7 +30,7 @@ class Solution {
 			
 			int hour=Integer.parseInt(end_time.substring(0,2))-Integer.parseInt(start_time.substring(0,2));
 			int minute=Integer.parseInt(end_time.substring(3))-Integer.parseInt(start_time.substring(3));
-			int replay_time=hour*60+minute;//À½¾Ç Àç»ý½Ã°£
+			int replay_time=hour*60+minute;//ìŒì•… ìž¬ìƒì‹œê°„
 			
 			
 			if(info.contains("C#")) {
@@ -51,16 +51,16 @@ class Solution {
 
 			
 			
-			String music=String.valueOf(info.toString().charAt(0));//string ->char->string ½Ã°£¿¡ µû¶ó Àç»ýµÇ´Â ³ë·¡
+			String music=String.valueOf(info.toString().charAt(0));//string ->char->string ì‹œê°„ì— ë”°ë¼ ìž¬ìƒë˜ëŠ” ë…¸ëž˜
 	
 			for(int j=0;j<replay_time;j++) {
 				String ex=String.valueOf(info.toString().charAt(j%info.length()));
-				music=music.concat(ex);//0ºÎÅÍ½ÃÀÛÇØ¼­ ¾Õ ±ÛÀÚÇÏ³ª°¡ ´õ Ãß°¡µÊ
+				music=music.concat(ex);//0ë¶€í„°ì‹œìž‘í•´ì„œ ì•ž ê¸€ìží•˜ë‚˜ê°€ ë” ì¶”ê°€ë¨
 			}
 			music=music.substring(1);
 			
 			if(music.contains(m) && max < replay_time) {
-                max=replay_time;
+                		max=replay_time;
 				answer=title;
 				
 			}
