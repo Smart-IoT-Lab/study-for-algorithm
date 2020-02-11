@@ -1,5 +1,14 @@
 package week_13.방금그곡;
 
+/*
+1. 악보정보와 끝시간-시작시간 비교하기
+=> 악보가 더 길다 : temp 변수에 끝시간-시작시간
+=> 끝시간-시작시간이 더 길다 : temp 변수에 악보길이
+
+temp 변수만큼 m.length % temp 하면서 m 에 있는 알파벳 추출
+
+주의할 것. 다음 문자를 확인해 #인지 아닌지 확인하고 같이 검사
+ */
 public class Solution {
     public String solution(String m, String[] musicinfos) {
         String matchingTitle = "";
