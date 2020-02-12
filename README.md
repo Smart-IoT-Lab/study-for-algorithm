@@ -28,13 +28,14 @@
 
 1. 발표  
     주차별 주제에 맞게 각자 준비
-    스터디 당일 랜덤 발표
+    스터디 당일 랜덤 발표 (스터디 내용, 선정문제 2개 풀이)
 2. 문제 풀이  
-    공유 파일 Excel, Notion 에 정리  
-    문제 2개 : 다음주 풀어올 문제를 다같이 선정
-    문제 1개 : 발표자가 준비 및 발표
+    공유 파일 Excel 에 정리  
+    문제 2개 : 다음주 풀어올 문제를 다같이 선정  
+    문제 1개 : 발표자가 준비 및 발표 (발표날 다같이 진행)
 3. 발표 자료 업로드  
-    Deadline : 일요일 오전 9시
+    Deadline : 일요일 오전 9시  
+    구글Docs : https://docs.google.com/spreadsheets/d/1c7XnY03q4siuhds3iw3Fi2tOraB47CKhc9ptvmfx9hU/edit?usp=sharing
 4. 스킬 테스트  
     매 월 마지막주 일요일 Programmers 사이트 스킬 테스트 진행
 ---
@@ -55,6 +56,7 @@
 * 3주차  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 힙 (Heap)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 깊이/너비 우선 탐색 (DFS/BFS)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 발표날 프로그래머스 레벨1 테스트 진행(40분 소요)
 
 * 4주차  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 책 순서 진행  
@@ -101,6 +103,7 @@ kkt829@gmail.com
 고형용- [@HyoungYong](https://github.com/HyoungYong) – 
 kgu15460@gmail.com
 
+박지우- [@eraserrr](https://github.com/eraserrr) – 
 <!--
 [https://github.com/yourname/github-link](https://github.com/dbader/)
 -->
