@@ -3,8 +3,8 @@
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 책 순서 진행  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;책 : 알고리즘 문제해결전략 ( [link](https://book.naver.com/bookdb/book_detail.nhn?bid=7058764) )
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 2월 2주차 [ Kakao (Level 1)]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 비밀지도 ( [link](https://book.naver.com/bookdb/book_detail.nhn?bid=7058764) )
 
 <!--
 [https://github.com/yourname/github-link](https://github.com/dbader/)
