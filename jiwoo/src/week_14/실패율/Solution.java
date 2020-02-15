@@ -31,6 +31,7 @@ import java.util.*;
 테스트 27 〉	통과 (1.91ms, 52.6MB)
  */
 public class Solution {
+    // 윗단계를 클리어하지못한 사람은 = 지금 단계를 클리어 한 사람이다
     public int[] solution(int N, int[] stages) {
         ArrayList<Integer> stagesList = new ArrayList<>();
         for(int temp : stages){
@@ -54,7 +55,7 @@ public class Solution {
             //System.out.println(failSum+","+clearSum);
             if(clearSum+failSum==0){
                 failRate.put(i,(float)0);
-                clearSum = failSum+clearSum;
+                clearSum = 0;
                 failSum = 0;
                 continue;
             }
