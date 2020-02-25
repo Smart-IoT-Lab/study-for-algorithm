@@ -1,4 +1,4 @@
-package week_14.비밀지도;
+package week_13.비밀지도;
 
 public class Solution {
     public String[] solution(int n, int[] arr1, int[] arr2) {
