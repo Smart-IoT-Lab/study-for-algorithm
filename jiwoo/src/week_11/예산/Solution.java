@@ -40,8 +40,8 @@ public class Solution {
                     right = mid - 1;
                 else
                     left = mid + 1;
-
             }
+            
             if (a > M)
                 return mid - 1;
             else
