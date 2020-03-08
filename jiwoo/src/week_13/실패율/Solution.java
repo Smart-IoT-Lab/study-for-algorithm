@@ -1,4 +1,4 @@
-package week_14.실패율;
+package week_13.실패율;
 
 import java.util.*;
 /*
@@ -46,7 +46,7 @@ public class Solution {
             clearSum++;
             stagesList.remove(idx);
         }
-        for(int i=N;i>1;i--){
+        for(int i=N;i>=1;i--){
             // i 는 현재 탐색할 스테이지 단계
             while((idx=stagesList.indexOf(i))!=-1){
                 failSum++;
@@ -60,14 +60,11 @@ public class Solution {
                 continue;
             }
             failRate.put(i,(float)failSum/(clearSum+failSum)); //실패율 기록
-            //System.out.println(i+"에서 실패율은" +failRate.get(i));
+            System.out.println(i+"에서 실패율은" +failRate.get(i));
             clearSum = failSum+clearSum;
             failSum = 0;
         }
-        //stagesList의 나머지는 1
-        failRate.put(1,(float)stagesList.size()/(stagesList.size()+clearSum));
-        //System.out.println("1에서 실패율은 "+failRate.get(1));
-        
+
         List<Integer> list = new ArrayList<>();
         list.addAll(failRate.keySet());
 
@@ -76,6 +73,9 @@ public class Solution {
             public int compare(Object o1, Object o2) {
                 if(failRate.get(o1) > failRate.get(o2))
                     return -1;
+                else if(failRate.get(o1)==failRate.get(o2)){
+                    return (int)o1>(int)o2?-1:1; //오름차순
+                }
                 else
                     return 1;
             }
@@ -93,7 +93,7 @@ public class Solution {
         return answer;
     }
     public static void main(String[] args) {
-        int[] arr = {2};
-        new Solution().solution(1,arr);
+        int[] arr = {2,1,2,6,2,4,3,3,77,15,21,11,22,15,7,3,9,5,33,54};
+        new Solution().solution(77,arr);
     }
 }
